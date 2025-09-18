@@ -1,0 +1,18 @@
+-Create / Add new Book(s)
+curl -X POST http://localhost:3000/books \
+  -H "Content-Type: application/json" \
+  -d '{"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "year": 1925}'
+
+-Show All Books
+curl -X GET http://localhost:3000/books
+
+-Show Books based on ID
+curl -X GET http://localhost:3000/books/1
+
+-Update Books based on ID
+curl -X PUT http://localhost:3000/books/1 \
+  -H "Content-Type: application/json" \
+  -d '{"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "year": 1926}'
+
+-Delete Books based on ID
+curl -X DELETE http://localhost:3000/books/1
