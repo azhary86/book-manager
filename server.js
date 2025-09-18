@@ -4,7 +4,7 @@ const db = require('./models');
 
 const PORT = process.env.PORT || 3000;
 
-// Inisialisasi database sebelum server start
+// DB Initialize before start
 db.initialize()
   .then(() => {
     app.listen(PORT, () => {
