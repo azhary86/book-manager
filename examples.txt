@@ -1,18 +1,29 @@
 -Create / Add new Book(s)
-curl -X POST http://localhost:3000/books \
-  -H "Content-Type: application/json" \
-  -d '{"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "year": 1925}'
+Method  : POST
+URL     : http://localhost:3000/books
+Headers : Content-Type: application/json
+Body    : { "title": "Manusia Setengah Lele", "author": "Radika Ditya", "year": 1998 }
 
 -Show All Books
-curl -X GET http://localhost:3000/books
+Method  : GET
+URL     : http://localhost:3000/books
+Headers : (blank)
+Body    : (blank)
 
 -Show Books based on ID
-curl -X GET http://localhost:3000/books/1
+Method  : POST
+URL     : http://localhost:3000/books/1
+Headers : (blank)
+Body    : (blank)
 
--Update Books based on ID
-curl -X PUT http://localhost:3000/books/1 \
-  -H "Content-Type: application/json" \
-  -d '{"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "year": 1926}'
+-Update Books (based on ID)
+Method  : PUT
+URL     : http://localhost:3000/books/{id} -> change the {id} into specific id book
+Headers : Content-Type: application/json
+Body    : { "title": "Manusia Setengah lala-baba", "author": "Joseph Simatupang", "year": 1999 }
 
 -Delete Books based on ID
-curl -X DELETE http://localhost:3000/books/1
+Method  : DELETE
+URL     : http://localhost:3000/books/{id} -> change the {id} into specific id book
+Headers : (blank)
+Body    : (blank)
