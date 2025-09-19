@@ -12,3 +12,6 @@
 - GET /books/:id - Dapatkan buku by ID
 - PUT /books/:id - Update buku
 - DELETE /books/:id - Hapus buku
+
+## Contoh Request
+Lihat di file `example.txt`
